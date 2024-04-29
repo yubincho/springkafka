@@ -1,0 +1,10 @@
+  # 베이스 이미지로 공식 Kafka 이미지 사용
+FROM wurstmeister/kafka:2.13-2.8.0
+
+  # 필요한 환경변수 설정
+ENV KAFKA_ADVERTISED_HOST_NAME localhost
+ENV KAFKA_ZOOKEEPER_CONNECT zookeeper:2181
+ENV KAFKA_MESSAGE_MAX_BYTES 2000000  # 2 MB
+
+  # 포트 9092 열기
+EXPOSE 9092

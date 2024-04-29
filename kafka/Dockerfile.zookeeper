@@ -1,0 +1,10 @@
+# 베이스 이미지로 공식 Zookeeper 이미지 사용
+FROM zookeeper:3.7
+
+# 필요한 환경 설정
+ENV ZOO_MY_ID 1
+ENV ZOO_SERVERS server.1=0.0.0.0:2888:3888
+
+# 포트 열기
+EXPOSE 2181 2888 3888
+
