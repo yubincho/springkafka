@@ -14,8 +14,11 @@ spring:
 #  data.rest:
 #    base-path: /api
 #    detection-strategy: annotated
+  data:
+    mongodb:
+      uri: mongodb+srv://user1:1234@cluster-test-001.13kb6bi.mongodb.net/?retryWrites=true&w=majority&appName=Cluster-Test-001
 
-#  servlet:
+  #  servlet:
 #    multipart:
 #      max-file-size: 10MB
 #      max-request-size: 10MB
